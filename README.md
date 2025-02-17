@@ -31,3 +31,46 @@ I also tried a transient analysis to watch how the circuit behaves over time. I 
 
 -> Conclusion
 After doing all these tests—DC operating point, AC sweep, DC sweep, and transient—I saw that the NMOS transistor is well biased and works as an amplifier. 
+
+
+
+
+
+
+Design-2
+
+![Screenshot 2025-02-18 002528](https://github.com/user-attachments/assets/37d195d5-1376-46fb-9116-d4fd5b8d4fcc)
+
+
+
+-> Introduction
+The report below is an overview of the outcome of circuit simulation from a SPICE-based simulator, e.g., DC operating point analysis, transient analysis, AC analysis. The circuit uses PMOS (CMOSP) and NMOS (CMOSN) transistors, which influence the switching behavior. A 50mV amplitude, 1kHz frequency sine wave voltage source is applied.
+
+![Screenshot 2025-02-18 002547](https://github.com/user-attachments/assets/fa8b68cc-727e-4d1c-a870-bce63159cf41)
+![Screenshot 2025-02-18 002600](https://github.com/user-attachments/assets/1219d06e-ddac-4e90-83f3-b25b9134ebd9)
+![Screenshot 2025-02-18 002612](https://github.com/user-attachments/assets/536d4194-5ed2-469c-992f-7001f93d833a)
+
+
+
+
+
+-> AC Analysis
+The AC analysis gives the frequency response, gain, and bandwidth of the circuit. For sweeping frequency from 0.1Hz to 1Hz on a log scale, the .ac dec 20 0.1 1 respectively was used. This analysis is useful in determining the response of the circuit to different frequencies, gain characteristics, and possible signal attenuation.
+
+![Screenshot 2025-02-18 002726](https://github.com/user-attachments/assets/c8757302-6ca7-41d8-9c2d-ac717ff5beee)
+
+
+-> DC Operating Point Analysis
+A DC sweep was conducted by sweeping vin from 0V to 1.8V in 0.1V steps using the .dc vin 0 1.8 0.1 command. This analysis gives voltage transfer characteristics, showing the operating regions of transistors and helping in setting biasing conditions. The results show the circuit under steady state conditions and help in design implementation.
+
+![Screenshot 2025-02-18 002627](https://github.com/user-attachments/assets/1753918a-dc32-442c-b776-32aa094e2901)
+
+
+-> Transient Analysis
+The transient response was analyzed using the .tran 1m command to check the dynamic behave of the circuit over time. This is useful in checking rise time, fall time, and signal propagation characteristics. Observations include possible instability in the switching behavior, which is imprtant in ensuring reliable circuit operation.
+
+![Screenshot 2025-02-18 002904](https://github.com/user-attachments/assets/1d322d87-8c77-4a11-9434-ae1ae0df62f4)
+
+
+-> Conclusion
+Simulation output provides valuable information regarding the voltage transfer function of the circuit, signal response, and frequency response. MOSFET sizes need to be checked to ensure optimal performance, transient response should be checked for instability, noise analysis should be performe, and the biasing conditions should be set to gey stability and efficiency. The results are used to build a better quality design of circuit.
