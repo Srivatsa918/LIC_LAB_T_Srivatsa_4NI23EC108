@@ -5,7 +5,7 @@ I used LTspice to play with a small NMOS transistor circuit. There is a resistor
 
 
 -> Operating Point and Id Value
-I did a DC operating point analysis to find important voltages and currents. The gate was around 0.9V, and the drain was about 1.77163V. Because the source is near ground, that means the transistor is in the saturation region and can act like an amplifier. The drain current turned out to be around 2.83663e-05 A (which is 28.37µA).
+I did a DC operating point analysis to find important voltages and currents. The gate was around 0.9V, and the drain was about 1.77163V. Because the source is near ground, that means the transistor is in the saturation region and can act like an amplifier. The drain current turned out to be around 28.37µA.
 
 ->AC Analysis
 Next, I checked the circuit’s frequency response using AC analysis. At lower frequencies, the circuit has a steady gain, but at higher frequencies, the gain gets weaker. The phase also changes as we move through different frequencies. This looks just like a simple low-pass amplifier using an NMOS transistor.
