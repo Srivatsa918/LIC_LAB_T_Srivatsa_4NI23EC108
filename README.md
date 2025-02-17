@@ -23,6 +23,8 @@ Then I used a DC sweep to see how the circuit’s output changes with different 
 I also tried a transient analysis to watch how the circuit behaves over time. I fed the gate a little sine wave and checked the voltage at the drain. The output was amplified, and at really high frequencies, it looked a bit distorted. That still shows the NMOS can amplify signals, and everything worked like I thought.
 
 ![Transient](https://github.com/user-attachments/assets/9b6f6cc8-672f-4024-9c25-7f82db4ea464)
+![Screenshot 2025-02-17 234456](https://github.com/user-attachments/assets/a4784ad0-a9c2-45f8-b076-9bc4a610d3c8)
+
 
 
 -> Conclusion
