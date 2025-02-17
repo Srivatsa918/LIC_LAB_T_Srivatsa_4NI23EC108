@@ -16,7 +16,7 @@ Next, I checked the circuit’s frequency response using AC analysis. At lower f
 
 
 ->DC Output Characteristics
-Then I used a DC sweep to see how the circuit’s output changes with different voltages. I noticed that the drain voltage stayed around 1.77V, which matched what I expected from the resistor and transistor math. This tells me the transistor is getting the right bias and is working where it should.
+Then I used a DC op pnt to see how the circuit’s output changes with different voltages. I noticed that the drain voltage stayed around 1.77V, which matched what I expected from the resistor and transistor output. This tells me the transistor is getting the right bias and is working where it should.
 
 ![dc1](https://github.com/user-attachments/assets/989a2e5b-2b70-4861-b410-2c9df209371a)
 
