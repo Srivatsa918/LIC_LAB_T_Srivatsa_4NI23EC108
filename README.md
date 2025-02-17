@@ -1,3 +1,5 @@
+EXPIREMENT-1
+
 -> Introduction
 I used LTspice with a small NMOS transistor circuit. There is a resistor (R1) and a power supply of 1.8V. The gate of the transistor gets a tiny AC signal from another source. This setup helped me look at the transistor’s DC operating point, how it behaves with different frequencies (AC analysis), its DC output, and its time response (transient).
 
