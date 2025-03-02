@@ -1,1 +1,42 @@
+Differential Amplifier Circuit 
 
+1. Circuit Schematic and Components.
+The first image shows the Differential Amplifier schematic, consisting of:
+
+
+- Two NMOS transistors (M1 and M2): Differential pair amplifying the difference between the input signals.
+- Current Source (RSS = 327. 33): Supplies stable tail current to bias the differential pair.
+- Load resistors (RD1 = RD2 = 1. 145k): Change the differential current into an output voltage.
+- Power Supply (VDD = 1. 8V): Supplies operating voltage to the circuit.
+- Input Sources (Vism1 and Vicm2): Differential input signals with AC variation.
+- TSMC 0.18μm MOSFET Model (tsmc018.lib): Defines the transistor characteristics.
+
+
+2. DC Operating Point Analysis (Biasing)
+The second figure shows the circuit’s DC biasing conditions, which define its steady-state operation.
+
+- Gate-Source Voltage (Vgs) 0. 95V: Keeps both MOSFETs (M1 and M2) in saturation mode for proper amplification.
+- Drain Voltages (Vd1, Vd2) 1. 1V: Verify proper operation in the active region.
+- Drain currents (Id1 = Id2 0. 611mA): Demonstrate that the current mirror divides the tail current in half correctly.
+- Tail current (Itail 1. 22mA): Same as expected sum of Id1 and Id2, so biasing is correct.
+
+Since the MOSFETs are biased properly, the amplifier performs small-signal amplification effectively.
+
+
+3. Transient Analysis.
+
+- Vism1 and Vicm2 are sinusoidal signals with:
+  - DC bias = 0.95V
+  - Amplitude = 0.1V
+  - Frequency = 1kHz
+- The output voltage waveform is differential in nature, that is the output swings in opposite directions when the input signals change.
+- Amplitude of differential input is clearly shown in the output, confirming correct differential pair operation.
+
+
+This result shows that the amplifier works properly for low-frequency AC signals.
+
+
+4. AC Frequency Response Analysis
+
+
+This analysis permits the amplifier to be designed for better high-frequency performance through more optimal transistor sizing and compensation techniques.
