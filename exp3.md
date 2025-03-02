@@ -63,3 +63,31 @@ AC frequency response plot illustrates the differential amplifier gain across a 
 
 ![4](https://github.com/user-attachments/assets/9125ee0f-c3c3-4680-be80-98baacbdaf1f)
 
+
+
+
+Q]
+
+![1](https://github.com/user-attachments/assets/fe7d5d8e-14c0-42bb-ad1f-721860316c28)
+
+
+1]DC Operating Point Analysis:-
+The differential amplifier, built with NMOS transistors and a current source, operates symmetrically with input common-mode voltages of *0.95V* at nodes \( n006 \) and n004. Drain voltages at  M1  and  M2  are 1.1004V, while the source voltage is 0.400017V. Bias voltage Vb is 0.76V, properly biasing M3. Drain currents through RD1 and RD2 are 611 µA, matching M1 and M2. The total supply current is 1.222 mA, confirming proper current mirroring. Negligible gate currents indicate ideal MOSFET behavior.  
+
+![2](https://github.com/user-attachments/assets/af9bf103-97e5-4c27-96e8-5c46f10deb3f)
+
+
+2]Transient Analysis:-  
+Over a 5 ms span, the transient response shows proper differential signal amplification with maintained phase relationships. The output waveform exhibits expected peaks and troughs, ensuring transistors operate within their designed regions without saturation or cutoff. 
+
+![3](https://github.com/user-attachments/assets/09fee891-afca-4957-9315-fb43f2be60ac)
+
+
+3]AC Analysis:-
+The gain plot remains stable in the mid-frequency range before rolling off at high frequencies due to the circuit's dominant pole. The phase response initially holds steady before decreasing with frequency. The results confirm the amplifier's effective signal amplification within its designed bandwidth.  
+
+![4](https://github.com/user-attachments/assets/8ac9f122-c6c6-4d0d-913f-aef6ad474954)
+
+
+
+
