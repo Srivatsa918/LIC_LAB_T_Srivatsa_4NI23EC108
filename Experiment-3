@@ -1,13 +1,1 @@
-1] Introduction:-
-A differential amplifier is one of the elementary blocks utilized in analog circuit design, used widely for amplification of high common-mode rejection signals. It amplifies the differential input and rejects common noise, one of the most important applications in sensor signal processing, communications systems, and operational amplifier circuits. The circuit is usually made up of two transistors or MOSFETs with common source/emitter resistance for balanced operation. The DC operating point, transient response, and AC analysis of a MOSFET differential amplifier simulated with LTSpice are presented in this report.
-
-
-
-2] DC Operating Point Analysis:-
-The DC operating point determines the voltages and currents in the circuit without an input signal applied. The resulting values are important in determining whether the MOSFETs are in the desired operating region. From the LTSpice simulation, the most significant node voltages and currents are the following: The drain voltage across M1 is 95V, and that across M2 is -95V. The source voltage for both transistors is at -100.38V, and the gate voltage is -8V. The drain current through M1 is 0.000611026 A, and the source current is the same but in opposite direction, for current conservation. Similarly, the bias current through the RD1 resistor is 0.00122205 A, indicating balanced differential operation. The introduction of a common-source resistor compromises the symmetry and stability of the circuit.
-
-3] Transient Response:-
-Transient analysis monitors the time-domain response of the circuit to the input signal. A 0.95V amplitude sine wave input with 0.1V AC component of 1kHz frequency was applied. The output waveform monitors the differential response of the circuit, showing how the amplifier responds to dynamic signals. The MOSFETs are in the active region, enabling proper amplification. The results confirm the expected differential operation, with the output swinging symmetrically around the bias point as a response to the input signal changes.
-
-AC Analysis-
-The AC analysis sets the frequency response of the amplifier with a small-signal AC input and measurement of the gain and phase shift over a large range of frequencies. The simulation was set with the .ac dec 20 0.1 1T command, sweeping the frequency logarithmically between 0.1 Hz and 1 THz in 20 points per decade. This determines the gain-bandwidth product, mid-band gain, and high-frequency roll-off. The amplifier indicates high gain for low and mid-frequencies and a smooth roll-off at high frequencies due to parasitic capacitances and MOSFET operation. The bandwidth and phase response determine the suitability of the design for differential signal amplification in real-world applications.
+echo "# My Project Title" > README.md
