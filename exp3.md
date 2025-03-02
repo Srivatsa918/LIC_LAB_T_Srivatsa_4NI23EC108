@@ -1,7 +1,9 @@
 1] Introduction:-
 A differential amplifier is one of the elementary blocks utilized in analog circuit design, used widely for amplification of high common-mode rejection signals. It amplifies the differential input and rejects common noise, one of the most important applications in sensor signal processing, communications systems, and operational amplifier circuits. The circuit is usually made up of two transistors or MOSFETs with common source/emitter resistance for balanced operation. The DC operating point, transient response, and AC analysis of a MOSFET differential amplifier simulated with LTSpice are presented in this report.
 
+![image](https://github.com/user-attachments/assets/05c8c79c-f53d-4978-8ed3-4bd99666b495)
 
+Q] Circuit:-
 ![1](https://github.com/user-attachments/assets/47e2b2bc-9492-4a23-a7bb-49df2d225f6f)
 
 2] DC Operating Point Analysis:-
@@ -16,14 +18,14 @@ Transient analysis monitors the time-domain response of the circuit to the input
 ![3](https://github.com/user-attachments/assets/e522b664-c9ba-4b00-a897-9bd8f2df6d43)
 
 
-AC Analysis-
+4] AC Analysis:-
 The AC analysis sets the frequency presponse of the amplifier with a small-signal AC input and measurement of the gain and phase shift over a large range of frequencies. The simulation was set with the .ac dec 20 0.1 1T command, sweeping the frequency logarihmically between 0.1 Hz and 1 THz in 20 points per decade. This determines the gainbandmwidth product, midband gain, and high-frequency rolloff. The amplifier indicates high gain for low and mid-frequencies and a smooth roll-off at high freuencies due to parasitic capacitances and MOSFET operation. The bandwidth and phase response determine the suitablity of the design for differential signal amplification in real-world applications.
 
 ![4](https://github.com/user-attachments/assets/2dbdaf99-9086-4545-a5ed-af9edc9f83e5)
 
 
 
-
+Q]
 ![1](https://github.com/user-attachments/assets/ddf1de92-190a-4dea-a285-c85b55f925fd)
 
 
