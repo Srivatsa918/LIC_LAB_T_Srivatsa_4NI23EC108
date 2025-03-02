@@ -26,6 +26,11 @@ The AC analysis sets the frequency presponse of the amplifier with a small-signa
 
 
 Q]
+
+
+
+
+
 ![1](https://github.com/user-attachments/assets/ddf1de92-190a-4dea-a285-c85b55f925fd)
 
 
@@ -68,11 +73,16 @@ AC frequency response plot illustrates the differential amplifier gain across a 
 
 Q]
 
+
+
+
+
+
 ![1](https://github.com/user-attachments/assets/fe7d5d8e-14c0-42bb-ad1f-721860316c28)
 
 
 1]DC Operating Point Analysis:-
-The differential amplifier, built with NMOS transistors and a current source, operates symmetrically with input common-mode voltages of *0.95V* at nodes \( n006 \) and n004. Drain voltages at  M1  and  M2  are 1.1004V, while the source voltage is 0.400017V. Bias voltage Vb is 0.76V, properly biasing M3. Drain currents through RD1 and RD2 are 611 µA, matching M1 and M2. The total supply current is 1.222 mA, confirming proper current mirroring. Negligible gate currents indicate ideal MOSFET behavior.  
+The differential amplifier, built with NMOS transistors and a current source, operates symmetrically with input common-mode voltages of 0.95V at nodes n006 and n004. Drain voltages at  M1  and  M2  are 1.1004V, while the source voltage is 0.400017V. Bias voltage Vb is 0.76V, properly biasing M3. Drain currents through RD1 and RD2 are 611 µA, matching M1 and M2. The total supply current is 1.222 mA, confirming proper current mirroring. Negligible gate currents indicate ideal MOSFET behavior.  
 
 ![2](https://github.com/user-attachments/assets/af9bf103-97e5-4c27-96e8-5c46f10deb3f)
 
@@ -90,4 +100,11 @@ The gain plot remains stable in the mid-frequency range before rolling off at hi
 
 
 
+=>Conclusion:-  
+The circuit simulation results indicate that the designed NMOS-based amplifier operates within expected parameters. The key voltage levels at various nodes confirm proper biasing, while the current values validate the correct functioning of the active components. The AC analysis shows stable frequency response, and the transient response suggests smooth signal amplification.  
 
+=>Inference:-
+1. Voltage Levels: The circuit maintains appropriate voltage levels across different nodes, ensuring reliable operation.  
+2. Current Flow: The drain and source currents align with theoretical expectations, confirming proper transistor biasing.  
+3. Frequency Response: The AC analysis shows a well-defined bandwidth, making the circuit suitable for the intended application.  
+4. Performance Stability: The transient response data indicates minimal distortion, suggesting good amplification characteristics.  
