@@ -1,1 +1,73 @@
+Differential Amplifier Simulation Report
+
+
+1. Introduction 
+This report details the simulation and analysis of a CMOS differential amplifier in order to determine the DC operating point, transient response, and frequency response of the circuit. A differential amplifier is a basic analog signal processing circuit that amplifies the difference between two input signals and rejects common-mode noise. The simulation was performed in LTspice and results include voltage measurements, current calculations, transient response, and AC analysis to determine the gain and bandwidth of the amplifier.
+
+
+2. Circuit Schematic and Components
+Two NMOS transistors (M1 and M2) form the differential pair. The sources of both transistors are connected to a common current source (RSS) that supplies biasing current. The drains are connected to load resistors (RD1 and RD2) that define the gain of the circuit. A DC supply voltage (VDD = 1. 8V) supplies the circuit and the differential input signals (Vism1 and Vicm2) are applied at the gates of the transistors.
+
+
+Component Values:
+- Load Resistors (RD1, RD2): 1.145kΩ  
+- Current Source (RSS): 327.33Ω  
+- Supply Voltage (VDD): 1.8V  
+- Input Signal: SINE(0.95V, 0.1V, 1kHz)  
+
+3. DC Operating Point Analysis 
+DC analysis is carried out to find the steady-state voltages and currents in the circuit. DC analysis is carried out to check whether the MOSFETs are operating in the correct region (saturation) for amplification. The simulated DC results are:
+
+
+- Drain Voltages (Vd1, Vd2): 1.10038V  
+- Source Voltage (Vs): 0.400014V  
+- Drain Currents (Id1, Id2): 611.026µA  
+- Total Bias Current (I(RSS)): 1.22205mA  
+
+
+These values indicate that both transistors are in the saturation region so they are providing proper amplification. Also, since the drain voltages are nearly equal it shows good matching of the differential pair.
+
+
+4. Transient Analysis and Gain Calculation  
+Transient analysis Transient analysis is carried out for sinusoidal input. Differential input of 0. 1V peak is applied at 1kHz frequency. Output waveform is observed at the drains of the transistors. It is the amplified form of the input signal. The gain of the amplifier is obtained as: output:
+
+
+\[
+Gain = \frac{V_{out}}{V_{in}}
+\]
+
+
+From the simulation:  
+- Input Peak Voltage (V_in): 0.1V  
+- *Output Peak Voltage (V_out): 0.655V  
+
+
+The voltage gain in linear scale is:  
+
+
+\[
+A_v = \frac{0.655}{0.1} = 6.55
+\]
+
+
+Converting to decibels (dB):  
+
+
+\[
+Gain_{dB} = 20 \log(6.55) = 16.3 \text{ dB}
+\]
+
+
+This result shows that the amplifier has moderate gain and can be used for differential signal amplification applications.
+
+
+5. Frequency Response and Bandwidth 
+AC analysis is carried out to find out the variation of gain with frequency. The gain remains constant up to a certain frequency and then it decreases because of parasitic capacitances and transistor limitations. The main parameters observed from the Bode plot are:
+
+
+- Low-frequency gain: 16.3 dB  
+- −3 dB Cutoff Frequency (Bandwidth): Around 5 MHz  
+
+
+At low frequencies the amplifier shows its designed gain, at the cutoff frequency the gain starts to fall off and shows the bandwidth limitation.
 
