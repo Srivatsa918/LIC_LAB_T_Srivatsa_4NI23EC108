@@ -10,6 +10,33 @@ A differential amplifier is one of the elementary blocks utilized in analog circ
 
 Requried Caluclations:-
 
+Given:
+VDD = 1.8 V, P ≤ 2.2 mW, Vicm = 0.95 V, Vocm = 1.1 V, Vp = 0.4 V.
+
+P = 2.2 mW 
+  = VDD x ISS 
+  = 1.8 x ISS
+
+ISS = 2.2 mW / 1.8 V 
+    = 1.222 mA 
+
+ID1 = ID2 = ISS/2 
+    = 0.611 mA 
+
+RD = (VDD - VOCM)/ID1 
+   = (1.8 – 1.1) V / (0.611 x 10-3) A   
+   = 1145.6628 Ω   
+   = 1.145 kΩ 
+
+RSS = Vp / ISS 
+    = 0.4 V / 1.222 mA 
+    = 327.33 Ω 
+
+RD1 = RD2 
+    = 1.145 kΩ
+
+RSS = 327.33 Ω
+
 
 
 Circuit_1:-
