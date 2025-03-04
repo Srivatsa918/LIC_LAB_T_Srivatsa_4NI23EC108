@@ -108,6 +108,18 @@ The transient response waveform shows the differential output voltage varying si
 
 ![3](https://github.com/user-attachments/assets/02a004a2-3073-4960-8b64-4bb1b1c723a1)
 
+Now, we can calculate the V/V gain.
+
+Av = Vout/Vin = (1.24 – 0.968) / (50 x 10^-3) = 0.272/ (50 x 10^-3) = 5.44 V/V
+
+∴ Av = 5.44 V/V
+
+Calculating the dB gain.
+
+A’v = 20log(Av)
+
+A’v = 20log(5.44) = 14.711 dB
+
 This analysis verifies that the differential amplifier operates as expected under dynamic conditions to enable efficient signal amplification.
 
 3] AC Analysis:
@@ -136,6 +148,8 @@ The differential amplifier, built with NMOS transistors and a current source, op
 Over a 5 ms span, the transient response shows proper differential signal amplification with maintained phase relationships. The output waveform exhibits expected peaks and troughs, ensuring transistors operate within their designed regions without saturation or cutoff. 
 
 ![3](https://github.com/user-attachments/assets/09fee891-afca-4957-9315-fb43f2be60ac)
+
+
 
 
 3]AC Analysis:-
