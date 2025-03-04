@@ -1,3 +1,9 @@
+EXPERIMENT 3:-
+
+Q]
+
+
+
 1] Introduction:-
 A differential amplifier is one of the elementary blocks utilized in analog circuit design, used widely for amplification of high common-mode rejection signals. It amplifies the differential input and rejects common noise, one of the most important applications in sensor signal processing, communications systems, and operational amplifier circuits. The circuit is usually made up of two transistors or MOSFETs with common source/emitter resistance for balanced operation. The DC operating point, transient response, and AC analysis of a MOSFET differential amplifier simulated with LTSpice are presented in this report.
 
