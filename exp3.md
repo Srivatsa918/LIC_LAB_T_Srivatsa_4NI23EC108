@@ -53,6 +53,18 @@ Transient analysis monitors the time-domain response of the circuit to the input
 
 ![3](https://github.com/user-attachments/assets/e522b664-c9ba-4b00-a897-9bd8f2df6d43)
 
+Now, we can calculate the V/V gain.
+
+Av = Vout/Vin = (1.24 – 0.95) / (50 x 10^-3) = 0.275 / (50 x 10^-3) = 5.8 V/V
+
+∴ Av = 5.8 V/V
+
+Calculating the dB gain.
+
+A’v = 20log(Av)
+
+A’v = 20log(5.8) = 15.2 dB
+
 
 4] AC Analysis:-
 The AC analysis sets the frequency presponse of the amplifier with a small-signal AC input and measurement of the gain and phase shift over a large range of frequencies. The simulation was set with the .ac dec 20 0.1 1T command, sweeping the frequency logarihmically between 0.1 Hz and 1 THz in 20 points per decade. This determines the gainbandmwidth product, midband gain, and high-frequency rolloff. The amplifier indicates high gain for low and mid-frequencies and a smooth roll-off at high freuencies due to parasitic capacitances and MOSFET operation. The bandwidth and phase response determine the suitablity of the design for differential signal amplification in real-world applications.
