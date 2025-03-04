@@ -1,19 +1,22 @@
 EXPERIMENT 3:-
 
-Q]
+Q]Design and analyze the differential amplifies for the following specificahon VDD=1.8V, P≤ 2.2 mW, Vicm = 0.95V, Vocm = 1.1V, Vp=0.4V. perform: DC analysis, Transient analysis, Frequency responce and extract the parameters.
 
 
 
 1] Introduction:-
 A differential amplifier is one of the elementary blocks utilized in analog circuit design, used widely for amplification of high common-mode rejection signals. It amplifies the differential input and rejects common noise, one of the most important applications in sensor signal processing, communications systems, and operational amplifier circuits. The circuit is usually made up of two transistors or MOSFETs with common source/emitter resistance for balanced operation. The DC operating point, transient response, and AC analysis of a MOSFET differential amplifier simulated with LTSpice are presented in this report.
 
-![image](https://github.com/user-attachments/assets/05c8c79c-f53d-4978-8ed3-4bd99666b495)
 
-Q] Circuit:-
+Requried Caluclations:-
+
+
+
+Circuit_1:-
 ![1](https://github.com/user-attachments/assets/47e2b2bc-9492-4a23-a7bb-49df2d225f6f)
 
 2] DC Operating Point Analysis:-
-The DC operating point determines the voltages and currents in the circuit without an input signal applied. The resulting values are important in determining whether the MOSFETs are in the desired operating region. From the LTSpice simulation, the most significant node voltages and currents are the following: The drain voltage across M1 is 95V, and that across M2 is -95V. The source voltage for both transistors is at -100.38V, and the gate voltage is -8V. The drain current through M1 is 0.000611026 A, and the source current is the same but in opposite direction, for current conservation. Similarly, the bias current through the RD1 resistor is 0.00122205 A, indicating balanced differential operation. The introduction of a common-source resistor compromises the symmetry and stability of the circuit.
+
 
 ![2](https://github.com/user-attachments/assets/f2f0bfce-46d2-457a-98c1-572401f36872)
 
@@ -31,12 +34,12 @@ The AC analysis sets the frequency presponse of the amplifier with a small-signa
 
 
 
-Q]
 
 
 
 
 
+Q]Circuit_2
 ![1](https://github.com/user-attachments/assets/ddf1de92-190a-4dea-a285-c85b55f925fd)
 
 
@@ -77,13 +80,10 @@ AC frequency response plot illustrates the differential amplifier gain across a 
 
 
 
-Q]
 
 
 
-
-
-
+Q]Circuit_3:-
 ![1](https://github.com/user-attachments/assets/fe7d5d8e-14c0-42bb-ad1f-721860316c28)
 
 
