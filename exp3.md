@@ -43,6 +43,7 @@ Circuit_1:-
 ![1](https://github.com/user-attachments/assets/47e2b2bc-9492-4a23-a7bb-49df2d225f6f)
 
 2] DC Operating Point Analysis:-
+The provided circuit is a differential amplifier with NMOS transistors, with a 1.8V supply and a 1.222mA current. The input voltages Vism1 and Vicm2 are both 0.95V, for balanced operation. The drain voltages of the two transistors are both 1.1004V, for symmetrical operation. The MOSFETs are in saturation mode, for proper amplification. The drain currents are equal at 611μA, and the resistors RD1 and RD2 (1.145kΩ) drop voltage accordingly. The power dissipation is 2.2mW, making it a low-power design for high-precision analog applications.
 
 
 ![2](https://github.com/user-attachments/assets/f2f0bfce-46d2-457a-98c1-572401f36872)
