@@ -150,6 +150,7 @@ Over a 5 ms span, the transient response shows proper differential signal amplif
 
 ![3](https://github.com/user-attachments/assets/09fee891-afca-4957-9315-fb43f2be60ac)
 
+Gain is 22.3 db
 
 
 
